@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Snake game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="start.css">
+    <link rel="stylesheet" href="snake.css">
+
+</head>
+<body>
+
+
+
+<div class="topnav" id="myTopnav">
+  <a class="w3-bar-item w3-button" href="index.html" class="active">Home</a>
+  <a class="w3-bar-item w3-button" href="news.html"">News</a>
+  <a class="w3-bar-item w3-button" href="contact.html">Contact</a>
+  <a class="w3-bar-item w3-button" href="about.html">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div style="display:none" class="alert alert-dismissible alert-secondary" id="game_over">
+<button type="button" class="close" data-dismiss="alert">&times;</button>
+<strong>Game over!</strong> Press "restart" to try again.
+</div>
+
+
+
+ <body style="background-color:black;">
+   <div class="snakei">
+     <canvas id="snakeboard" width="600" height="380"></canvas>
+   </div>
+ <div class="highscore">
+ <p>Champion: <strong id="champion"> </strong> With a score of &nbsp;<strong id="highscore"></strong></p>
+ <p id="champion"> </p>
+ <p id="highscore"></p>
+ </div>
+ <div class="scoreplace">
+  <p id="place"></p>
+     <p>Your score:</p>
+     <hr>
+     <p id="score">0</p>
+ </div>
+
+</div>
+<div class="restarti">
+ <button onClick="window.location.reload();" class="button button1" style="background-color:#e580ff">Restart</button>
+</div>
+
+</body>
+<script>
+document.getElementById("place").innerHTML= localStorage.getItem("name");
+ console.log(localStorage.getItem("name"));
+</script>
+<script src="snake.js"></script>
+
+
+</html>
