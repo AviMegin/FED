@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 20px auto;
+    font-family: "Lato";
+    font-weight: 300;
+  }
+
+  form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+  }
+
+  form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  input {
+    font-family: "Lato";
+  }
+
+  a {
+    color: #0000ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+
+  .example::-webkit-scrollbar {
+
+      display: none;
+
+  }
+
+
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+
+  .example {
+
+    -ms-overflow-style: none;  /* IE and Edge */
+
+    scrollbar-width: none;  /* Firefox */
+
+  }
+  .open-button {
+
+  color: Black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  border-radius: 120px;
+  background: #fbeced;
+  box-shadow:  41px 41px 82px #478ac9,
+               -41px -41px 82px #db545a;
+}
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+
+  z-index: 9;
+  overflow: auto;
+  border-radius: 61px;
+
+}
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+background-color: #F3C4C7;
+}
+.form-container .cancel {
+  background-image: linear-gradient(#fbeced, #e68387);
+  border-radius: 25px;
+}
+
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 400px;
+  padding: 10px;
+  background-color:none;
+
+}
+  #wrapper,
+  #loginform {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 600px;
+    max-width: 100%;
+    border: 2px solid #292d33;
+    border-radius: 26px;
+
+  }
+
+  #loginform {
+    padding-top: 18px;
+    text-align: center;
+    border-radius: 26px;
+background: #ffffff;
+box-shadow:  43px 43px 86px #cccccc,
+             -43px -43px 86px #ffffff;
+  }
+
+  #loginform p {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+  }
+
+  #chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #fff;
+    height: 300px;
+    width:auto;
+    border: 1px solid #478ac9;
+    overflow: auto;
+    border-radius: 26px;
+
+  }
+
+  #usermsg {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #478ac9;
+    border-radius: 24px;  }
+
+  #name {
+    border-radius: 4px;
+    border: 1px solid #478ac9;
+    padding: 2px 8px;
+    border-radius: 24px;
+  }
+
+  #submitmsg,
+  #enter{
+    background:  #478ac9;
+    border: 2px solid #292d33;
+    color: white;
+    padding: 4px 10px;
+    font-weight: bold;
+
+    border-radius: 24px;
+  }
+
+  .error {
+    color: #f3ccff;
+  }
+
+  #menu {
+    padding: 15px 25px;
+    display: flex;
+  }
+
+  #menu p.welcome {
+    flex: 1;
+  }
+
+  a#exit {
+    color: white;
+    background: #292d33;
+    padding: 4px 8px;
+    border-radius: 25px;
+    font-weight: bold;
+
+
+  }
+
+  .msgln {
+    margin: 0 0 5px 0;
+  }
+
+  .msgln span.left-info {
+    color: orangered;
+  }
+
+  .msgln span.chat-time {
+    color: #666;
+    font-size: 60%;
+    vertical-align: super;
+  }
+
+  .msgln b.user-name, .msgln b.user-name-left {
+    font-weight: bold;
+    background: #292d33;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+
+  .msgln b.user-name-left {
+    background: grey;
+  }
