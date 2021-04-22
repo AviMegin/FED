@@ -1,4 +1,3 @@
-
 <?php
 
 session_start();
@@ -10,7 +9,7 @@ if(isset($_GET['logout'])){
     file_put_contents("log.html", $logout_message, FILE_APPEND | LOCK_EX);
 
     session_destroy();
-  header("Location: home.php"); //Redirect the user
+      header("Location: home.php"); //Redirect the user
 }
 
 if(isset($_POST['enter'])){
@@ -35,6 +34,7 @@ function loginForm(){
 }
 
 ?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -42,21 +42,13 @@ function loginForm(){
     <meta charset="utf-8">
     <meta name="keywords" content="Megin van Herk">
     <meta name="description" content="">
-
-    <title>Websites</title>
-<link rel="stylesheet" href="Websites.css" media="screen">
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <link rel="icon" href="images/1e66fbf7-6e48-42f8-846a-e4a9c5152b352">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="style.css" />
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="CSS/nicepage.css" media="screen">
+<link rel="stylesheet" href="CSS/Worktastic.css" media="screen">
+<script class="u-script" type="text/javascript" src="JavaScript/jquery.js" defer=""></script>
+<script class="u-script" type="text/javascript" src="JavaScript/nicepage.js" defer=""></script>
+<link rel="stylesheet" href="CSS/style.css" />
     <!-- Hotjar Tracking Code for http://i430712.hera.fhict.nl/AvilionArt/Home.html -->
     <script>
         (function(h,o,t,j,a,r){
@@ -68,7 +60,14 @@ function loginForm(){
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+
+    <meta property="og:title" content="avilion">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
   </head>
   <body class="u-body">
     <?php
@@ -125,94 +124,78 @@ function loginForm(){
       </nav>
         <h2 class="u-text u-text-1">Megin van Herk</h2><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-base u-icon-1"><img src="images/1e66fbf7-6e48-42f8-846a-e4a9c5152b352.png" alt=""></span>
       </div></header>
-    <section class="u-clearfix u-gradient u-section-1" id="sec-b98b">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div alt="" class="u-image u-image-circle u-image-1" data-image-width="1500" data-image-height="1000" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" data-href="worktastic.html" target="_blank"></div>
-        <div class="u-image u-image-circle u-image-2" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" data-href="avilion.html"></div>
-        <div class="u-image u-image-circle u-image-3" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" data-href="snakegame.html" target="_blank"></div>
-        <div alt="" class="u-image u-image-circle u-image-4" data-image-width="640" data-image-height="480" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" ></div>
-        <div alt="" class="u-image u-image-circle u-image-5" data-image-width="640" data-image-height="480" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" onclick=""></div>
-        <div alt="" class="u-image u-image-circle u-image-6" data-image-width="640" data-image-height="480" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" onclick=""></div>
+    <section class="u-clearfix u-palette-2-light-3 u-section-1" id="sec-858c">
+      <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+        <div alt="logo" class="Logo u-image u-image-circle u-preserve-proportions u-image-1" data-image-width="1600" data-image-height="1600" data-href="http://i430712.hera.fhict.nl/Portfolio/"></div>
+        <div class="u-border-3 u-border-grey-dark-1 u-expanded-width-xs u-shape u-shape-bottom u-shape-right u-shape-1"></div>
+        <p class="u-text u-text-1">HTML</p>
+        <p class="u-text u-text-2">CSS</p>
+        <div class="Html u-border-1 u-border-grey-75 u-container-style u-group u-palette-1-light-3 u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <p class="u-text u-text-default u-text-3">HTML INPUT</p>
+          </div>
+        </div>
+        <p class="u-text u-text-4">
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="http://i430712.hera.fhict.nl/Portfolio/">Worktastic</a>
+        </p>
+        <div class="u-border-1 u-border-black u-line u-line-horizontal u-line-1"></div>
+        <div class="u-border-3 u-border-grey-dark-1 u-expanded-width-xs u-shape u-shape-left u-shape-top u-shape-2"></div>
+        <div class="Css u-border-1 u-border-grey-75 u-container-style u-group u-palette-2-light-2 u-group-2">
+          <div class="u-container-layout u-container-layout-2">
+            <p class="u-text u-text-default u-text-5">CSS INPUT</p>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-palette-2-light-3 u-section-2" id="sec-2c2d">
-      <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
-        <div class="u-expanded-width u-tabs u-tabs-1">
-          <ul class="u-tab-list u-unstyled" role="tablist">
-            <li class="u-tab-item" role="presentation">
-              <a class="active u-active-white u-button-style u-tab-link u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">Description</a>
-            </li>
-            <li class="u-tab-item" role="presentation">
-              <a class="u-active-white u-button-style u-tab-link u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">Specifications</a>
-            </li>
-            <li class="u-tab-item" role="presentation">
-              <a class="u-active-white u-button-style u-tab-link u-tab-link-3" id="link-tab-2917" href="#tab-2917" role="tab" aria-controls="tab-2917" aria-selected="false">Reviews</a>
-            </li>
-          </ul>
-          <div class="u-tab-content">
-            <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
-              <div class="u-container-layout u-valign-bottom u-container-layout-1">
-                <h3 class="u-text u-text-1">Website specification</h3>
-                <div class="u-table u-table-responsive u-table-1">
-                  <table class="u-table-entity">
-                    <colgroup>
-                      <col width="20%">
-                      <col width="20%">
-                      <col width="20%">
-                      <col width="20%">
-                      <col width="20%">
-                    </colgroup>
-                    <tbody class="u-table-body">
-                      <tr style="height: 55px;">
-                        <td class="u-first-column u-table-cell">Website</td>
-                        <td class="u-table-cell">Type</td>
-                        <td class="u-table-cell">Project</td>
-                        <td class="u-table-cell">Time taken</td>
-                        <td class="u-table-cell">Personal Rating</td>
-                      </tr>
-                      <tr style="height: 56px;">
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-first-column u-table-cell">Worktastic</td>
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">Communication</td>
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">Group Project</td>
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">2 months</td>
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">7/10</td>
-                      </tr>
-                      <tr style="height: 56px;">
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-first-column u-table-cell">AvilionArt</td>
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">Art page</td>
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">Solo Project</td>
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">1 month</td>
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">8/10</td>
-                      </tr>
-                      <tr style="height: 56px;">
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-first-column u-table-cell">Snake game</td>
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">Game</td>
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">Solo Project</td>
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">2 weeks</td>
-                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">10/10</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <p class="u-text u-text-2">All these websites were made for educational purpose only. There is no intention for copyright infrightment.</p>
+    <section class="u-align-center u-clearfix u-lightbox u-palette-2-light-3 u-section-2" id="sec-8939">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-subtitle u-text u-text-1">Wireframes</h2>
+        <div class="Wireframes u-expanded-width u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1" id="carousel-f57a">
+          <div class="u-gallery-inner u-gallery-inner-1" role="listbox">
+            <div class="u-effect-fade u-gallery-item">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded" src="images/2.svg">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-1">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
               </div>
             </div>
-            <div class="u-container-style u-tab-pane u-white u-tab-pane-2" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
-              <div class="u-container-layout u-container-layout-2">
-                <p class="u-text u-text-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
-                  <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </p>
+            <div class="u-effect-fade u-gallery-item">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded" src="images/2.svg">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-2">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
               </div>
             </div>
-            <div class="u-container-style u-tab-pane u-white u-tab-pane-3" id="tab-2917" role="tabpanel" aria-labelledby="link-tab-2917">
-              <div class="u-container-layout u-container-layout-3">
-                <h4 class="u-text u-text-4">Be The First To Review My Websites!</h4>
-                <p class="u-text u-text-5">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-btn u-button-style u-palette-2-light-3 u-btn-1">write product review</a>
+            <div class="u-effect-fade u-gallery-item" data-image-width="1200" data-image-height="1600">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded" src="images/IMG20201217161059.jpg">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-3">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
+              </div>
+            </div>
+            <div class="u-effect-fade u-gallery-item" data-image-width="1200" data-image-height="1600">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded" src="images/default-image.jpg">
+              </div>
+              <div class="u-over-slide u-shading u-over-slide-4">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text"></p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-palette-2-light-3 u-section-3" id="sec-6160">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1">Logo Design</h1>
+        <img src="images/sketch1614274236251.png" alt="" class="u-image u-image-default u-image-1" data-image-width="2560" data-image-height="1600">
       </div>
     </section>
 

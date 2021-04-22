@@ -9,7 +9,7 @@ if(isset($_GET['logout'])){
     file_put_contents("log.html", $logout_message, FILE_APPEND | LOCK_EX);
 
     session_destroy();
-    header("Location: chat.php"); //Redirect the user
+      header("Location: home.php"); //Redirect the user
 }
 
 if(isset($_POST['enter'])){
@@ -35,21 +35,25 @@ function loginForm(){
 
 ?>
 
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Megin van Herk">
+    <meta name="keywords" content="Megin van Herk, Outfit Ideas 2020">
     <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Snake Game</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="snakegame.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+
+    <title>About</title>
+    <link rel="stylesheet" href="CSS/nicepage.css" media="screen">
+<link rel="stylesheet" href="CSS/About.css" media="screen">
+    <script class="u-script" type="text/javascript" src="JavaScript/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="JavaScript/nicepage.js" defer=""></script>
+
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i">
 <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
-<link rel="stylesheet" href="style.css" />
+    <!-- Hotjar Tracking Code for http://i430712.hera.fhict.nl/AvilionArt/Home.html -->
     <script>
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -60,14 +64,19 @@ function loginForm(){
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
-
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-
-    <meta property="og:title" content="avilion">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "index.html"
+}</script>
+    <meta property="og:title" content="About">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
     <link rel="canonical" href="index.html">
     <meta property="og:url" content="index.html">
+    link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="images/Favicon.png"/>
   </head>
   <body class="u-body">
     <?php
@@ -124,153 +133,116 @@ function loginForm(){
       </nav>
         <h2 class="u-text u-text-1">Megin van Herk</h2><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-base u-icon-1"><img src="images/1e66fbf7-6e48-42f8-846a-e4a9c5152b352.png" alt=""></span>
       </div></header>
-    <section class="u-clearfix u-palette-2-light-3 u-section-1" id="sec-858c">
-      <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
-        <div alt="" class="Logo u-image u-image-circle u-preserve-proportions u-image-1" data-image-width="1600" data-image-height="1600" data-href="http://i430712.hera.fhict.nl/index.html" target="_blank"></div>
-        <div class="u-border-3 u-border-grey-dark-1 u-expanded-width-xs u-shape u-shape-bottom u-shape-right u-shape-1"></div>
-        <p class="u-text u-text-1">HTML</p>
-        <p class="u-text u-text-2">CSS</p>
-        <div class="Html u-border-1 u-border-grey-75 u-container-style u-group u-palette-1-light-3 u-group-1">
-          <div class="u-container-layout u-container-layout-1">
-            <p class="re u-text u-text-default u-text-3">&#x3C;!DOCTYPE html&#x3E;
-&#x3C;html lang=&#x22;en&#x22;&#x3E;
-&#x3C;head&#x3E;
-  &#x3C;title&#x3E;Snake game&#x3C;/title&#x3E;
-  &#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
-  &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1&#x22;&#x3E;
-  &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&#x22;&#x3E;
-  &#x3C;script src=&#x22;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
-  &#x3C;script src=&#x22;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
-  &#x3C;script src=&#x22;https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
-  &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&#x22;&#x3E;
-  &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;start.css&#x22;&#x3E;
-&#x3C;/head&#x3E;
-&#x3C;body style=&#x22;background-color:#ffb3ff;&#x22;&#x3E;
-  &#x3C;div class=&#x22;header&#x22; style=&#x22;background-color:#e580ff;&#x22; &#x3E;
-    &#x3C;h1&#x3E;Snake game&#x3C;/h1&#x3E;
-    &#x3C;p&#x3E;Play the classic snake game&#x3C;/p&#x3E;
-  &#x3C;/div&#x3E;
-
-
-&#x3C;div class=&#x22;topnav&#x22; id=&#x22;myTopnav&#x22;&#x3E;
-  &#x3C;a class=&#x22;w3-bar-item w3-button&#x22; href=&#x22;index.html&#x22; class=&#x22;active&#x22;&#x3E;Home&#x3C;/a&#x3E;
-  &#x3C;a class=&#x22;w3-bar-item w3-button&#x22; href=&#x22;news.html&#x22;&#x22;&#x3E;News&#x3C;/a&#x3E;
-  &#x3C;a class=&#x22;w3-bar-item w3-button&#x22; href=&#x22;contact.html&#x22;&#x3E;Contact&#x3C;/a&#x3E;
-  &#x3C;a class=&#x22;w3-bar-item w3-button&#x22; href=&#x22;about.html&#x22;&#x3E;About&#x3C;/a&#x3E;
-  &#x3C;a href=&#x22;javascript:void(0);&#x22; class=&#x22;icon&#x22; onclick=&#x22;myFunction()&#x22;&#x3E;
-
-    &#x3C;i class=&#x22;fa fa-bars&#x22;&#x3E;&#x3C;/i&#x3E;
-  &#x3C;/a&#x3E;
-&#x3C;/div&#x3E;
-
-
-
-
-  &#x3C;div class=&#x22;column middle&#x22;&#x3E;
-&#x3C;div class=&#x22;placeholder-box&#x22;&#x3E;
-  &#x3C;label for=&#x22;Name&#x22;&#x3E;Your Name:&#x3C;/label&#x3E;
-  &#x3C;input type=&#x22;Text&#x22; id=&#x22;name&#x22; placeholder=&#x22;Enter Name&#x22; &#x3E;
-  &#x3C;button class=&#x22;button button5 btn-outline-info btn-lg  btn-block&#x22; onclick=&#x22;displayName()&#x22;&#x3E;Confirm!&#x3C;/button&#x3E;
-&#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-&#x3C;img src=&#x22;snek.png&#x22; alt=&#x22;snek&#x22;&#x3E;
-
-
-
-&#x3C;script&#x3E;
-function displayName() {
-  var name = document.getElementById(&#x27;name&#x27;).value;
-
-
-  if(name==0){
-    alert(&#x27;Please Enter Name&#x27;);
-    }
-    else{
-
-       localStorage.setItem(&#x22;name&#x22;, name);
-window.location.href=&#x22;snakegame.html&#x22;;
-    }
-
-}
-
-function myFunction() {
-  var x = document.getElementById(&#x22;myTopnav&#x22;);
-  if (x.className === &#x22;topnav&#x22;) {
-    x.className += &#x22; responsive&#x22;;
-  } else {
-    x.className = &#x22;topnav&#x22;;
-  }
-}
-
-
-&#x3C;/script&#x3E;
-
-&#x3C;/body&#x3E;
-&#x3C;/html&#x3E;
-</p>
-          </div>
-        </div>
-        <p class="u-text u-text-4">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" data-href="http://i430712.hera.fhict.nl/index.html" target="_blank">Snake game</a>
-        </p>
-        <div class="u-border-1 u-border-black u-line u-line-horizontal u-line-1"></div>
-        <div class="u-border-3 u-border-grey-dark-1 u-expanded-width-xs u-shape u-shape-left u-shape-top u-shape-2"></div>
-        <div class="Css u-border-1 u-border-grey-75 u-container-style u-group u-palette-2-light-2 u-group-2">
-          <div class="u-container-layout u-container-layout-2">
-            <p class="u-text u-text-default u-text-5">CSS INPUT</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="u-align-center u-clearfix u-lightbox u-palette-2-light-3 u-section-2" id="sec-8939">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-subtitle u-text u-text-1">Wireframes</h2>
-        <div class="Wireframes u-expanded-width u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1" id="carousel-f57a">
-          <div class="u-gallery-inner u-gallery-inner-1" role="listbox">
-            <div class="u-effect-fade u-gallery-item">
-              <div class="u-back-slide">
-                <img class="u-back-image u-expanded" src="images/2.svg">
+    <section class="u-clearfix u-custom-color-1 u-section-1" id="sec-9dc1">
+      <div class="u-clearfix u-sheet u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-30 u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-align-center u-container-style u-layout-cell u-left-cell u-palette-2-light-2 u-size-60 u-layout-cell-1">
+                    <div class="u-container-layout u-valign-middle u-container-layout-1">
+                      <img src="images/profile.jpeg" alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-1">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="u-over-slide u-shading u-over-slide-1">
-                <h3 class="u-gallery-heading"></h3>
-                <p class="u-gallery-text"></p>
-              </div>
-            </div>
-            <div class="u-effect-fade u-gallery-item">
-              <div class="u-back-slide">
-                <img class="u-back-image u-expanded" src="images/2.svg">
-              </div>
-              <div class="u-over-slide u-shading u-over-slide-2">
-                <h3 class="u-gallery-heading"></h3>
-                <p class="u-gallery-text"></p>
-              </div>
-            </div>
-            <div class="u-effect-fade u-gallery-item" data-image-width="1200" data-image-height="1600">
-              <div class="u-back-slide">
-                <img class="u-back-image u-expanded" src="images/IMG20201217161059.jpg">
-              </div>
-              <div class="u-over-slide u-shading u-over-slide-3">
-                <h3 class="u-gallery-heading"></h3>
-                <p class="u-gallery-text"></p>
-              </div>
-            </div>
-            <div class="u-effect-fade u-gallery-item" data-image-width="1200" data-image-height="1600">
-              <div class="u-back-slide">
-                <img class="u-back-image u-expanded" src="images/default-image.jpg">
-              </div>
-              <div class="u-over-slide u-shading u-over-slide-4">
-                <h3 class="u-gallery-heading"></h3>
-                <p class="u-gallery-text"></p>
+              <div class="u-size-30 u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-size-40">
+                    <div class="u-layout-row">
+                      <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2">
+                        <div class="u-container-layout u-container-layout-2">
+                          <h6 class="u-text u-text-1">About me</h6>
+                          <h2 class="u-custom-font u-font-playfair-display u-text u-text-2">Megin van herk<br>
+                            <br>
+                          </h2>
+                          <p class="u-text u-text-grey-5 u-text-3">18 years old. Fontys student, ICT media design.<br>I enjoy creative work and design.&nbsp;
+                          </p>
+                          <a href="#" class="u-btn u-button-style u-gradient u-hover-palette-2-light-1 u-none u-btn-1">Contact</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="u-size-20">
+                    <div class="u-layout-row">
+                      <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-3">
+                        <div class="u-container-layout u-container-layout-3">
+                          <h5 class="u-text u-text-palette-2-light-1 u-text-4">Fontys</h5>
+                          <p class="u-text u-text-5">....</p>
+                        </div>
+                      </div>
+                      <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-4">
+                        <div class="u-container-layout u-valign-bottom-md u-container-layout-4">
+                          <h5 class="u-text u-text-palette-2-light-1 u-text-6">...</h5>
+                          <p class="u-text u-text-7">....</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-palette-2-light-3 u-section-3" id="sec-6160">
+    <section class="u-clearfix u-custom-color-1 u-section-2" id="sec-f661">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-text-default u-text-1">Logo Design</h1>
-        <img src="images/sketch1614274236251.png" alt="" class="u-image u-image-default u-image-1" data-image-width="2560" data-image-height="1600">
+        <div class="u-clearfix u-expanded-width u-gutter-18 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-20 u-size-30-md">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-container-style u-effect-hover-zoom u-layout-cell u-left-cell u-size-60 u-layout-cell-1" src="" data-image-width="1500" data-image-height="1000">
+                    <div class="u-background-effect u-expanded">
+                      <div class="u-background-effect-image u-expanded u-image u-image-1" data-image-width="1500" data-image-height="1000"></div>
+                    </div>
+                    <div class="u-container-layout u-container-layout-1" src="">
+                      <p class="u-text u-text-1">
+                        <span class="u-text-palette-3-base" style="font-size: 1.875rem;">Worktastic</span>
+                        <span class="u-text-palette-3-base"></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-20 u-size-30-md">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-container-style u-effect-hover-zoom u-layout-cell u-size-60 u-layout-cell-2" src="" data-image-width="1600" data-image-height="1600">
+                    <div class="u-background-effect u-expanded">
+                      <div class="u-background-effect-image u-expanded u-image u-image-2" data-image-width="1600" data-image-height="1600"></div>
+                    </div>
+                    <div class="u-container-layout u-container-layout-2" src="">
+                      <h4 class="u-text u-text-body-alt-color u-text-2">Art portfolio </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-20 u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-align-left u-container-style u-gradient u-layout-cell u-right-cell u-size-30 u-layout-cell-3">
+                    <div class="u-container-layout u-container-layout-3">
+                      <h3 class="u-text u-text-3" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down">Websites</h3>
+                      <p class="u-text u-text-4" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down">Over the course of my studies I make numerous websites.<br>Below I will keep updating the website on my progess:
+                      </p>
+                      <a href="Websites.html" data-page-id="109828602" class="u-btn u-btn-rectangle u-button-style u-gradient u-none u-text-body-color u-text-hover-palette-2-base u-btn-1" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down">Websites<span style="font-size: 1.125rem;"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-container-style u-effect-hover-zoom u-layout-cell u-right-cell u-size-30 u-layout-cell-4" src="" data-image-width="1200" data-image-height="773">
+                    <div class="u-background-effect u-expanded">
+                      <div class="u-background-effect-image u-expanded u-image u-image-3" data-image-width="500" data-image-height="500"></div>
+                    </div>
+                    <div class="u-container-layout u-container-layout-4" src="">
+                      <h4 class="u-text u-text-custom-color-3 u-text-5">Snake game</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

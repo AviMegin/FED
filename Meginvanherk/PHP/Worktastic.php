@@ -42,14 +42,14 @@ function loginForm(){
     <meta charset="utf-8">
     <meta name="keywords" content="Megin van Herk">
     <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Worktastic.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
-    <link rel="stylesheet" href="style.css" />
+
+    <title>Worktastic</title>
+    <link rel="stylesheet" href="CSS/nicepage.css" media="screen">
+<link rel="stylesheet" href="CSS/Worktastic.css" media="screen">
+<script class="u-script" type="text/javascript" src="JavaScript/jquery.js" defer=""></script>
+<script class="u-script" type="text/javascript" src="JavaScript/nicepage.js" defer=""></script>
+<link rel="stylesheet" href="CSS/style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="images/Favicon.png"/>
     <!-- Hotjar Tracking Code for http://i430712.hera.fhict.nl/AvilionArt/Home.html -->
     <script>
         (function(h,o,t,j,a,r){
@@ -77,57 +77,57 @@ function loginForm(){
     }
     else {
     ?><header class="u-clearfix u-header u-palette-5-dark-3 u-header" id="sec-cf9b"><div class="u-clearfix u-sheet u-valign-middle-lg u-sheet-1">
-      <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD">
-        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
 </symbol>
 </defs></svg>
-          </a>
-        </div>
-        <div class="u-custom-menu u-nav-container">
-          <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Home.php" style="padding: 10px 20px;">Home</a>
-          </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="About.php" style="padding: 10px 20px;">About</a>
-          </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Contact.php" style="padding: 10px 20px;">Contact</a>
-          </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Websites.php" style="padding: 10px 20px;">Websites</a><div class="u-nav-popup"><ul class="u-h-spacing-10 u-nav u-unstyled u-v-spacing-10 u-nav-2">
-          <li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="avilion.php">Avilion</a>
-          </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="snakegame.php">Snake game</a>
-          </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="Worktastic.php">Worktastic</a>
-          </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="Portfolio.php">Portfolio</a>
-          </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2">......</a>
-          </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2">......</a>
-          </li></ul>
+            </a>
           </div>
-          </li></ul>
-                    </div>
-                    <div class="u-custom-menu u-nav-container-collapse">
-                      <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-                        <div class="u-sidenav-overflow">
-                          <div class="u-menu-close"></div>
-                          <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 20px;">Home</a>
-          </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.php" style="padding: 10px 20px;">About</a>
-          </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.php" style="padding: 10px 20px;">Contact</a>
-          </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Websites.php" style="padding: 10px 20px;">Websites</a><div class="u-nav-popup">
-            <ul class="u-h-spacing-10 u-nav u-unstyled u-v-spacing-10 u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="avilion.php">Avilion</a>
-          </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="snakegame.php">Snake game</a>
-          </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Worktastic.php" >Worktastic</a>
-          </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Portfolio.php">Portfolio</a>
-          </li><li class="u-nav-item"><a class="u-button-style u-nav-link">......</a>
-          </li><li class="u-nav-item"><a class="u-button-style u-nav-link">......</a>
-          </li></ul>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Home.php" style="padding: 10px 20px;">Home</a>
+            </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="About.php" style="padding: 10px 20px;">About</a>
+            </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Contact.php" style="padding: 10px 20px;">Contact</a>
+            </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Websites.php" style="padding: 10px 20px;">Websites</a><div class="u-nav-popup"><ul class="u-h-spacing-10 u-nav u-unstyled u-v-spacing-10 u-nav-2">
+            <li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="avilion.php">Avilion</a>
+            </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="snakegame.php">Snake game</a>
+            </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="Worktastic.php">Worktastic</a>
+            </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="Portfolio.php">Portfolio</a>
+            </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2">......</a>
+            </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2">......</a>
+            </li></ul>
+            </div>
+            </li></ul>
+                      </div>
+                      <div class="u-custom-menu u-nav-container-collapse">
+                        <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                          <div class="u-sidenav-overflow">
+                            <div class="u-menu-close"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 20px;">Home</a>
+            </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.php" style="padding: 10px 20px;">About</a>
+            </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.php" style="padding: 10px 20px;">Contact</a>
+            </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Websites.php" style="padding: 10px 20px;">Websites</a><div class="u-nav-popup">
+              <ul class="u-h-spacing-10 u-nav u-unstyled u-v-spacing-10 u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="avilion.php">Avilion</a>
+            </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="snakegame.php">Snake game</a>
+            </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Worktastic.php" >Worktastic</a>
+            </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Portfolio.php">Portfolio</a>
+            </li><li class="u-nav-item"><a class="u-button-style u-nav-link">......</a>
+            </li><li class="u-nav-item"><a class="u-button-style u-nav-link">......</a>
+            </li></ul>
 </div>
 </li></ul>
+              </div>
             </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
-          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-        </div>
-      </nav>
+        </nav>
         <h2 class="u-text u-text-1">Megin van Herk</h2><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-base u-icon-1"><img src="images/1e66fbf7-6e48-42f8-846a-e4a9c5152b352.png" alt=""></span>
       </div></header>
     <section class="u-clearfix u-palette-2-light-3 u-section-1" id="sec-858c">
       <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
-        <div alt="logo" class="Logo u-image u-image-circle u-preserve-proportions u-image-1" data-image-width="1600" data-image-height="1600" data-href="http://i430712.hera.fhict.nl/Portfolio/"></div>
+        <div alt="" class="Logo u-image u-image-circle u-preserve-proportions u-image-1" data-image-width="1600" data-image-height="1600" data-href="http://i439985.hera.fhict.nl/worktastic/"></div>
         <div class="u-border-3 u-border-grey-dark-1 u-expanded-width-xs u-shape u-shape-bottom u-shape-right u-shape-1"></div>
         <p class="u-text u-text-1">HTML</p>
         <p class="u-text u-text-2">CSS</p>
@@ -137,7 +137,7 @@ function loginForm(){
           </div>
         </div>
         <p class="u-text u-text-4">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="http://i430712.hera.fhict.nl/Portfolio/">Worktastic</a>
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="http://i439985.hera.fhict.nl/worktastic/">Worktastic</a>
         </p>
         <div class="u-border-1 u-border-black u-line u-line-horizontal u-line-1"></div>
         <div class="u-border-3 u-border-grey-dark-1 u-expanded-width-xs u-shape u-shape-left u-shape-top u-shape-2"></div>
@@ -196,7 +196,7 @@ function loginForm(){
     <section class="u-clearfix u-palette-2-light-3 u-section-3" id="sec-6160">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-text u-text-default u-text-1">Logo Design</h1>
-        <img src="images/sketch1614274236251.png" alt="" class="u-image u-image-default u-image-1" data-image-width="2560" data-image-height="1600">
+        <img src="WorktasticLogo.png" alt="" class="u-image u-image-default u-image-1" data-image-width="2560" data-image-height="1600">
       </div>
     </section>
 

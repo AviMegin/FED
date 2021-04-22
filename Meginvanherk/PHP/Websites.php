@@ -1,3 +1,4 @@
+
 <?php
 
 session_start();
@@ -9,7 +10,7 @@ if(isset($_GET['logout'])){
     file_put_contents("log.html", $logout_message, FILE_APPEND | LOCK_EX);
 
     session_destroy();
-    header("Location: home.php"); //Redirect the user
+  header("Location: home.php"); //Redirect the user
 }
 
 if(isset($_POST['enter'])){
@@ -39,32 +40,36 @@ function loginForm(){
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Megin van Herk, Portfolio​, Outfit Ideas 2020, Work in Progress">
+    <meta name="keywords" content="Megin van Herk">
     <meta name="description" content="">
 
-    <title>Portfolio Megin</title>
-<link rel="stylesheet" href="Home.css" media="screen">
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-<link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
-<link rel="stylesheet" href="style.css" />
+    <title>Websites</title>
+<link rel="stylesheet" href="CSS/Websites.css" media="screen">
+    <link rel="stylesheet" href="CSS/nicepage.css" media="screen">
+    <script class="u-script" type="text/javascript" src="JavaScript/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="JavaScript/nicepage.js" defer=""></script>
+  <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" href="images/1e66fbf7-6e48-42f8-846a-e4a9c5152b352">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-<!-- Hotjar Tracking Code for http://i430712.hera.fhict.nl/AvilionArt/Home.html -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2319004,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
-
+    <!-- Hotjar Tracking Code for http://i430712.hera.fhict.nl/AvilionArt/Home.html -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2319004,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Alex+Brush:400">
   </head>
   <body class="u-body">
     <?php
@@ -72,8 +77,7 @@ function loginForm(){
         loginForm();
     }
     else {
-    ?>
-    <header class="u-clearfix u-header u-palette-5-dark-3 u-header" id="sec-cf9b"><div class="u-clearfix u-sheet u-valign-middle-lg u-sheet-1">
+    ?><header class="u-clearfix u-header u-palette-5-dark-3 u-header" id="sec-cf9b"><div class="u-clearfix u-sheet u-valign-middle-lg u-sheet-1">
       <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD">
         <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
           <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
@@ -122,143 +126,90 @@ function loginForm(){
       </nav>
         <h2 class="u-text u-text-1">Megin van Herk</h2><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-base u-icon-1"><img src="images/1e66fbf7-6e48-42f8-846a-e4a9c5152b352.png" alt=""></span>
       </div></header>
-    <section class="u-carousel u-slide u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-block-2411-1" src="" id="carousel_5926" data-interval="5000" data-u-ride="carousel">
-      <ol class="u-absolute-hcenter u-carousel-indicators u-block-2411-2">
-        <li data-u-target="#carousel_5926" data-u-slide-to="0" class="u-active u-gradient" style="height: 8px; background-image: linear-gradient(#f2f2f2, #db545a);"></li>
-        <li data-u-target="#carousel_5926" class="u-gradient" data-u-slide-to="1" style="height: 8px; background-image: linear-gradient(#f2f2f2, #db545a);"></li>
-      </ol>
-      <div class="u-carousel-inner" role="listbox">
-        <div class="u-active u-align-left u-carousel-item u-clearfix u-gradient u-section-1-1" src="">
-          <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-            <h1 class="u-custom-font u-text u-text-body-alt-color u-title u-text-1">Portfolio </h1>
-          </div>
-        </div>
-        <div class="skrollable skrollable-between u-align-center u-carousel-item u-clearfix u-gradient u-section-1-2">
-          <div class="u-clearfix u-sheet u-valign-middle-xl u-sheet-1">
-            <div alt="" class="u-expanded u-image u-image-circle u-image-1" data-image-width="1600" data-image-height="1509"></div>
-            <h1 class="u-text u-text-body-alt-color u-title u-text-1"><b>Megin van herk</b>
-            </h1>
-            <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-2">Student at ICT Fontys Eindhoven</p>
-            <a href="About.php" data-page-id="122834876" class="u-btn u-btn-round u-button-style u-palette-2-base u-radius-50 u-btn-1">About</a>
-          </div>
-        </div>
-      </div>
-      <a class="u-absolute-vcenter u-border-2 u-border-white u-carousel-control u-carousel-control-prev u-icon-circle u-spacing-10 u-text-white u-block-2411-5" href="#carousel_5926" role="button" data-u-slide="prev">
-        <span aria-hidden="true">
-          <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
-                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
-        </span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="u-absolute-vcenter u-border-2 u-border-white u-carousel-control u-carousel-control-next u-icon-circle u-spacing-10 u-text-white u-block-2411-4" href="#carousel_5926" role="button" data-u-slide="next">
-        <span aria-hidden="true">
-          <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
-        </span>
-        <span class="sr-only">Next</span>
-      </a>
-    </section>
-    <section class="u-clearfix u-grey-80 u-section-2" data-image-width="2000" data-image-height="1333" id="sec-c6ab">
+    <section class="u-clearfix u-gradient u-section-1" id="sec-b98b">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-align-center u-container-style u-group u-group-1">
-          <div class="u-container-layout u-container-layout-1">
-            <h2 class="u-text u-text-1">Media Design</h2>
-            <p class="u-text u-text-2">As a student of the media design course at Fontys, I learn many aspects to be applied to the process of assembling a website.</p>
-          </div>
-        </div>
-        <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
-          <div class="u-gutter-0 u-layout">
-            <div class="u-layout-row">
-              <div class="u-size-20 u-size-30-md">
-                <div class="u-layout-col">
-                  <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
-                    <div class="u-container-layout u-valign-top u-container-layout-2">
-                      <h3 class="u-text u-text-3">HTML</h3>
-                      <p class="u-text u-text-4">A strong base of your website, starts with a good looking base HTML file. A good ground to build upon.</p>
-                    </div>
-                  </div>
-                  <div class="u-align-left u-container-style u-layout-cell u-left-cell u-shape-rectangle u-size-20 u-layout-cell-2">
-                    <div class="u-container-layout u-valign-top u-container-layout-3">
-                      <h3 class="u-text u-text-5">CSS</h3>
-                      <p class="u-text u-text-6">A good looking website is the first step towards a succesful website.&nbsp;</p>
-                    </div>
-                  </div>
-                  <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-3">
-                    <div class="u-container-layout u-valign-top u-container-layout-4">
-                      <h3 class="u-text u-text-7">JavaScript</h3>
-                      <p class="u-text u-text-8">Beautiful, interactive features are always nice to have.</p>
-                    </div>
-                  </div>
+        <div alt="" class="u-image u-image-circle u-image-1" data-image-width="1500" data-image-height="1000" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" data-href="worktastic.html" target="_blank"></div>
+        <div class="u-image u-image-circle u-image-2" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" data-href="avilion.html"></div>
+        <div class="u-image u-image-circle u-image-3" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" data-href="snakegame.html" target="_blank"></div>
+        <div alt="" class="u-image u-image-circle u-image-4" data-image-width="640" data-image-height="480" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" ></div>
+        <div alt="" class="u-image u-image-circle u-image-5" data-image-width="640" data-image-height="480" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" onclick=""></div>
+        <div alt="" class="u-image u-image-circle u-image-6" data-image-width="640" data-image-height="480" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" onclick=""></div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-palette-2-light-3 u-section-2" id="sec-2c2d">
+      <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+        <div class="u-expanded-width u-tabs u-tabs-1">
+          <ul class="u-tab-list u-unstyled" role="tablist">
+            <li class="u-tab-item" role="presentation">
+              <a class="active u-active-white u-button-style u-tab-link u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">Description</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-white u-button-style u-tab-link u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">Specifications</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-white u-button-style u-tab-link u-tab-link-3" id="link-tab-2917" href="#tab-2917" role="tab" aria-controls="tab-2917" aria-selected="false">Reviews</a>
+            </li>
+          </ul>
+          <div class="u-tab-content">
+            <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
+              <div class="u-container-layout u-valign-bottom u-container-layout-1">
+                <h3 class="u-text u-text-1">Website specification</h3>
+                <div class="u-table u-table-responsive u-table-1">
+                  <table class="u-table-entity">
+                    <colgroup>
+                      <col width="20%">
+                      <col width="20%">
+                      <col width="20%">
+                      <col width="20%">
+                      <col width="20%">
+                    </colgroup>
+                    <tbody class="u-table-body">
+                      <tr style="height: 55px;">
+                        <td class="u-first-column u-table-cell">Website</td>
+                        <td class="u-table-cell">Type</td>
+                        <td class="u-table-cell">Project</td>
+                        <td class="u-table-cell">Time taken</td>
+                        <td class="u-table-cell">Personal Rating</td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-first-column u-table-cell">Worktastic</td>
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">Communication</td>
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">Group Project</td>
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">2 months</td>
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">7/10</td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-first-column u-table-cell">AvilionArt</td>
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">Art page</td>
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">Solo Project</td>
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">1 month</td>
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">8/10</td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-first-column u-table-cell">Snake game</td>
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">Game</td>
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">Solo Project</td>
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">2 weeks</td>
+                        <td class="u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-table-cell">10/10</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-              </div>
-              <div class="u-size-20 u-size-30-md">
-                <div class="u-layout-row">
-                  <div class="u-align-left u-container-style u-image u-layout-cell u-size-60 u-image-1" src="" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">
-                    <div class="u-container-layout u-valign-top u-container-layout-5" src=""></div>
-                  </div>
-                </div>
-              </div>
-              <div class="u-size-20 u-size-60-md">
-                <div class="u-layout-col">
-                  <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-5">
-                    <div class="u-container-layout u-valign-bottom u-container-layout-6">
-                      <h3 class="u-text u-text-9">UX</h3>
-                      <p class="u-text u-text-10">A good user experience is a good business.</p>
-                    </div>
-                  </div>
-                  <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-6">
-                    <div class="u-container-layout u-valign-bottom u-container-layout-7">
-                      <h3 class="u-text u-text-11">Design</h3>
-                      <p class="u-text u-text-12">Being able to make your own art and photography makes everything easier and more creative.</p>
-                    </div>
-                  </div>
-                  <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-7">
-                    <div class="u-container-layout u-container-layout-8">
-                      <h3 class="u-text u-text-13">Testing</h3>
-                      <p class="u-text u-text-14">Receiving feedback and listening to users can only lead to good things.</p>
-                    </div>
-                  </div>
-                </div>
+                <p class="u-text u-text-2">All these websites were made for educational purpose only. There is no intention for copyright infrightment.</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="u-align-left u-clearfix u-grey-5 u-section-4" id="carousel_2468">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-1">Upcoming features</h2>
-        <h6 class="u-text u-text-2">Fill in the survey to let me know, if you have any ideas to improve this website. Such as cute little game ideas, or simple design improvements. </h6>
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
-                <div class="u-container-layout u-valign-top u-container-layout-1">
-                  <p class="u-text u-text-3">
-                                                </p>
-                </div>
+            <div class="u-container-style u-tab-pane u-white u-tab-pane-2" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
+              <div class="u-container-layout u-container-layout-2">
+                <p class="u-text u-text-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+                  <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
               </div>
-
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="u-black u-clearfix u-section-6" id="sec-804c">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-image u-layout-cell u-size-30 u-image-1">
-                <div class="u-container-layout u-container-layout-1"></div>
-              </div>
-              <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-2">
-                  <h2 class="u-text u-text-1">Work in Progress</h2>
-                  <p class="u-text u-text-2">Voorbeeld tekst. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
-                </div>
+            <div class="u-container-style u-tab-pane u-white u-tab-pane-3" id="tab-2917" role="tabpanel" aria-labelledby="link-tab-2917">
+              <div class="u-container-layout u-container-layout-3">
+                <h4 class="u-text u-text-4">Be The First To Review My Websites!</h4>
+                <p class="u-text u-text-5">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="" class="u-btn u-button-style u-palette-2-light-3 u-btn-1">write product review</a>
               </div>
             </div>
           </div>
@@ -311,7 +262,7 @@ function loginForm(){
 </g></svg></span><span class="u-icon u-icon-circle u-text-palette-2-light-2 u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b45c"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-b45c" style="enable-background:new 0 0 512 512;"><g><path d="M222.892,388h51.491c4.418,0,8-3.582,8-8V264.093h26.751c4.101,0,7.538-3.101,7.958-7.18l4.51-43.772   c0.232-2.252-0.501-4.498-2.019-6.179c-1.517-1.682-3.675-2.641-5.939-2.641h-31.261v-17.73c0-3.662,1.159-3.936,2.928-3.936   h27.682c4.418,0,8-3.582,8-8v-42.5c0-4.406-3.562-7.982-7.968-8L274.848,124c-26.752,0-41.029,11.77-48.295,21.643   c-10.146,13.787-11.661,29.941-11.661,38.343v20.334h-16.489c-4.418,0-8,3.582-8,8v43.772c0,4.418,3.582,8,8,8h16.489V380   C214.892,384.418,218.473,388,222.892,388z M206.402,248.093v-27.772h16.489c4.418,0,8-3.582,8-8v-28.334   c0-5.185,0.833-18.376,8.547-28.86c7.386-10.037,19.3-15.126,35.376-15.126l30.177,0.122v26.533h-19.682   c-9.421,0-18.928,6.164-18.928,19.936v25.73c0,4.418,3.582,8,8,8h30.395l-2.862,27.772h-27.533c-4.418,0-8,3.582-8,8V372h-35.491   V256.093c0-4.418-3.582-8-8-8H206.402z"></path><path d="M437.022,74.984C388.67,26.63,324.381,0,256,0C187.624,0,123.338,26.63,74.984,74.984S0,187.624,0,256   c0,68.388,26.63,132.678,74.984,181.028C123.335,485.375,187.621,512,256,512c68.385,0,132.673-26.625,181.021-74.972   C485.372,388.679,512,324.389,512,256C512,187.622,485.372,123.336,437.022,74.984z M425.708,425.714   C380.381,471.039,320.111,496,256,496c-64.106,0-124.374-24.961-169.703-70.286C40.965,380.386,16,320.113,16,256   c0-64.102,24.965-124.37,70.297-169.702C131.63,40.965,191.898,16,256,16c64.108,0,124.378,24.965,169.708,70.297   C471.037,131.628,496,191.896,496,256C496,320.115,471.037,380.387,425.708,425.714z"></path><path d="M430.038,114.969c-2.784-3.432-7.821-3.957-11.253-1.172c-3.431,2.784-3.956,7.822-1.172,11.252   C447.526,161.919,464,208.425,464,256c0,55.567-21.635,107.803-60.919,147.086C363.797,442.367,311.563,464,256,464   c-51.26,0-100.505-18.807-138.663-52.956c-3.292-2.946-8.35-2.666-11.296,0.626c-2.946,3.292-2.666,8.35,0.626,11.296   C147.763,459.745,200.797,480,256,480c59.837,0,116.089-23.297,158.394-65.601C456.701,372.094,480,315.84,480,256   C480,204.766,462.256,154.681,430.038,114.969z"></path><path d="M48,256c0-114.691,93.309-208,208-208c51.26,0,100.504,18.808,138.662,52.959c3.293,2.948,8.351,2.666,11.296-0.625   c2.947-3.292,2.667-8.35-0.625-11.296C364.237,52.256,311.203,32,256,32c-59.829,0-116.079,23.301-158.389,65.611   C55.301,139.92,32,196.171,32,256c0,51.24,17.744,101.328,49.963,141.038c1.581,1.949,3.889,2.96,6.217,2.96   c1.771,0,3.553-0.585,5.036-1.788c3.431-2.784,3.956-7.822,1.172-11.253C64.474,350.088,48,303.58,48,256z"></path>
 </g></svg></span>
         <p class="u-text u-text-1"> &nbsp;i430712@student.fontys.nl</p>
-        <p class="u-text u-text-2" href="mailto:meginvanherk@gmail.com">meginvanherk@gmail.com</p>
+        <p class="u-text u-text-2">meginvanherk@gmail.com</p>
         <p class="u-text u-text-3">
           <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1" href="https://www.instagram.com/meginismegin/">@meginismegin</a>
         </p>
@@ -374,7 +325,5 @@ function loginForm(){
   alert("Please enter a name!"); // this is the message in ""
   }
       </script>
-
-
   </body>
 </html>

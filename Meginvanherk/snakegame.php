@@ -9,7 +9,7 @@ if(isset($_GET['logout'])){
     file_put_contents("log.html", $logout_message, FILE_APPEND | LOCK_EX);
 
     session_destroy();
-    header("Location: home.php"); //Redirect the user
+    header("Location: chat.php"); //Redirect the user
 }
 
 if(isset($_POST['enter'])){
@@ -44,12 +44,12 @@ function loginForm(){
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Snake Game</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="snakegame.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link rel="stylesheet" href="CSS/nicepage.css" media="screen">
+<link rel="stylesheet" href="CSS/snakegame.css" media="screen">
+    <script class="u-script" type="text/javascript" src="JavaScript/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="JavaScript/nicepage.js" defer=""></script>
 <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="CSS/style.css" />
     <script>
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -63,11 +63,7 @@ function loginForm(){
 
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
 
-    <meta property="og:title" content="avilion">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="index.html">
-    <meta property="og:url" content="index.html">
+
   </head>
   <body class="u-body">
     <?php
@@ -86,14 +82,14 @@ function loginForm(){
           </a>
         </div>
         <div class="u-custom-menu u-nav-container">
-          <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Home.php" style="padding: 10px 20px;">Home</a>
-          </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="About.php" style="padding: 10px 20px;">About</a>
-          </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Contact.php" style="padding: 10px 20px;">Contact</a>
-          </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Websites.php" style="padding: 10px 20px;">Websites</a><div class="u-nav-popup"><ul class="u-h-spacing-10 u-nav u-unstyled u-v-spacing-10 u-nav-2">
-          <li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="avilion.php">Avilion</a>
-          </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="snakegame.php">Snake game</a>
-          </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="Worktastic.php">Worktastic</a>
-          </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="Portfolio.php">Portfolio</a>
+          <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="PHP/Home.php" style="padding: 10px 20px;">Home</a>
+          </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="PHP/About.php" style="padding: 10px 20px;">About</a>
+          </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="PHP/Contact.php" style="padding: 10px 20px;">Contact</a>
+          </li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-button-style u-nav-link u-palette-2-light-3 u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="PHP/Websites.php" style="padding: 10px 20px;">Websites</a><div class="u-nav-popup"><ul class="u-h-spacing-10 u-nav u-unstyled u-v-spacing-10 u-nav-2">
+          <li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="PHP/avilion.php">Avilion</a>
+          </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="PHP/snakegame.php">Snake game</a>
+          </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="PHP/Worktastic.php">Worktastic</a>
+          </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2" href="PHP/Portfolio.php">Portfolio</a>
           </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2">......</a>
           </li><li class="u-nav-item"><a class="u-active-palette-2-light-3 u-button-style u-hover-palette-2-light-1 u-nav-link u-palette-2-light-2">......</a>
           </li></ul>
