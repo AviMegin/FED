@@ -22,7 +22,7 @@ var shapes = [
       1, 1, 1 ]
 ];
 var colors = [
-    'cyan', 'orange', 'blue', 'yellow', 'red', 'green', 'purple'
+    'cyan', 'orange', 'blue', 'yellow', 'red', 'pink', 'purple'
 ];
 
 // creates a new 4x4 shape in global variable 'current'
@@ -177,7 +177,8 @@ function valid( offsetX, offsetY, newCurrent ) {
                   || y + offsetY >= ROWS
                   || x + offsetX >= COLS ) {
                     if (offsetY == 1 && freezed) {
-                        lose = true; // lose if the current shape is settled at the top most row
+                        lose = true;
+                         // lose if the current shape is settled at the top most row
                         document.getElementById('playbutton').disabled = false;
                     }
                     return false;
