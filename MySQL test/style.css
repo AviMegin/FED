@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+  font-family: 'PT Sans', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items:center;
+}
+.wrapper{
+  width: 370px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-top: 0px;
+}
+.wrapper .title{
+  background: blue;
+  font-size: 20px;
+  font weight: 500;
+  line-height: 60px;
+  text-align: center;
+  border-bottom: 1px solid blue
+  border-radius: 5px 5px 0 0;
+}
+.wrapper .form{
+  padding: 20px 15px;
+  min-height: 400px;
+  max-height: 400px;
+  overflow-y:auto;
+}
+.wrapper .form .inbox{
+  
+}
