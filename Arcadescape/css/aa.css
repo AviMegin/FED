@@ -8,6 +8,7 @@ body{
   position:relative;
   display:inline-block;
   margin:20px;
+  padding-bottom: 20px;
 }
 
 .amaze a{
