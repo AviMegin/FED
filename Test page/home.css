@@ -27,6 +27,18 @@ background: #d2988e;
 box-shadow:  20px 20px 60px #b38179,
              -20px -20px 60px #f2afa3;
 }
+.aa{
+  position: absolute;
+width: 1095px;
+height: 501px;
+align-self: center;
+
+
+background: #812C2C;
+border: 1px solid #000000;
+box-sizing: border-box;
+filter: blur(4px);
+}
 .navbar{
   position: fixed;
 padding-left: 18px;
