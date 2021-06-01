@@ -41,18 +41,15 @@ function clickUpdates() {
             case 1:
             // function click 2 here
             document.getElementById("bot").style.display = "none";
-             var element = document.getElementsByClassName("chat active");
+             var element = document.getElementsById("chat");
              element.classList.toggle("active");
             break;
-            case 2:
-            // function click 3 here
-            console.log("Third Click: The new paragraph gets replaced with another different paragraph.");
-            break;
+
 
 
 
         }
-        count = count<2?count+1:2;
+        count = count<1?count+1:1;
     }
 
     return next;
