@@ -1,9 +1,9 @@
 <?php
 // connecting to database
-$dbhost = "localhost";
- $dbuser = "id16942327_sauna";
- $dbpass = "RfS3nm~LUm?Er2kZ";
- $db = "id16942327_bot";
+$dbhost = "studmysql01.fhict.local";
+ $dbuser = "dbi430712";
+ $dbpass = "ramses100";
+ $db = "dbi430712";
  $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
 // getting user message through ajax
 $getMesg = mysqli_real_escape_string($conn, $_POST['text']);
@@ -20,7 +20,7 @@ if(mysqli_num_rows($run_query) > 0){
     $replay = $fetch_data['replies'];
     echo $replay;
 }else{
-    echo "Im sorry, I cant help you with that";
+    echo "Im sorry, I cant help with that";
 }
 
 ?>
