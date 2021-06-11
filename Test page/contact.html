@@ -33,17 +33,14 @@
       <li><a href="about.html">About</a></li>
     </ul>
   </div>
-  <div class="wrapperi">
-    <input type="checkbox">
-    <div class="video">
-      <video src="https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_1.mp4" loop muted autoplay></video>
-    </div>
-    <form>
+
  <input type="button" value="No, really, go back!" onclick="history.go(-1)">
 </form>
-    <div class="text">
-      <span data-text="Watch the video"></span>
-    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<div style="position: absolute; right: 670px; bottom: 45px;">
+  <div id="pause"></div>
+  <div id="play"></div>
+</div>
   </div>
   <div class="chatbot">
     <div class="chat" id="chat">
@@ -87,6 +84,22 @@
   <script src="cursor.js"></script>
   <script src="home.js"></script>
   <script src="Chat.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+    $("#pause").click(function () {
+        $(this).hide();
+        $("#play").show();
+        $("#aa").stop(true, false);
+        audioTag1.pause();
+    }).hide(); // hide it initially
+    $("#play").click(function () {
+        $(this).hide();
+        $("#pause").show();
+        animateaa();
+    });
+});
+
+  </script>
 </div>
       </body>
       <footer >

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="about.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -21,6 +22,66 @@
     <p></p>
 
   <div class="parallax">
+
+    <div class="container">
+      <header>
+        <div class="playlist">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div class="setting">
+          <i class="fa fa-cog"></i>
+        </div>
+      </header>
+      <main>
+        <div class="album-art">
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/00/TheVines_WinningDays.jpg" alt="" />
+        </div>
+        <div class="player">
+          <i class="fa fa-repeat"></i>
+          <i class="fa fa-fast-backward"></i>
+          <i class="fa fa-play"></i>
+          <i class="fa fa-fast-forward"></i>
+          <i class="fa fa-random"></i>
+        </div>
+      </main>
+      <footer>
+        <div class="title">The Vines - Ride
+        </div>
+        <div class="time-tracker">
+          <div class="timer">
+            <div class="bg">
+            </div>
+          </div>
+          <div class="time">00:80</div>
+        </div>
+      </footer>
+    </div>
+
+
+
+
+
+
+    <audio id="testAudio" hidden src="https://api.twilio.com/cowbell.mp3" type="audio/mpeg">
+</audio>
+
+<button id="playAudio">Play</button>
+
+<script type="text/javascript">
+document.getElementById("playAudio").addEventListener("click", function(){
+    var audio = document.getElementById('myAudio');
+  if(this.className == 'is-playing'){
+    this.className = "";
+    this.innerHTML = "Play"
+    audio.pause();
+  }else{
+    this.className = "is-playing";
+    this.innerHTML = "Pause";
+    audio.play();
+  }
+
+});
+</script>
     <div class="navbar">
     <ul>
       <li><a href="Home.html">Home</a></li>
@@ -29,6 +90,7 @@
       <li><a href="about.html">About</a></li>
     </ul>
   </div>
+</div>
 
   <script src="cursor.js"></script>
   <script src="home.js"></script>

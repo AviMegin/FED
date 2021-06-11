@@ -67,7 +67,7 @@
                 <a href="#" class="btn">
              <i class="fas fa-backward"></i>
             </a>
-                <button href="#" class="btn" id="myBtn">
+                <button href="#" class="btn" id="playAudio">
             <i class="fas fa-play"></i>
           </button>
                 <a href="#" class="btn">
@@ -77,16 +77,29 @@
 
 
       </div>
+      
     </section>
     <audio src="slave.mp3" id="myAudio"></audio>
+    <script type="text/javascript">
 
-  <script>  document.getElementById("myBtn").addEventListener("click",function(){
-      document.getElementById("myAudio").play();
-    }
-    );
-  </script>
+    document.getElementById("playAudio").addEventListener("click", function(){
+        var audio = document.getElementById('myAudio');
+      if(this.className == 'is-playing'){
+        this.className = "btn";
+        this.innerHTML = ">"
+        audio.pause();
+      }else{
 
-<script type="text/javascript">
+        this.className = "is-playing";
+        this.innerHTML = "||";
+        audio.play();
+      }
+
+    });
+    </script>
+
+
+<script type="text/javascript" src="js/music.js">
 
 
   // if you need to filter <input> elements        switch (e.keyCode) {            case 37: // left            case 39: // right                e.preventDefault();                break;            case 38: // up            case 40: // down                e.preventDefault();                break;            default:                break;        }    }}, {    capture: true,   // this disables arrow key scrolling in modern Chrome    passive: false   // this is optional, my code works without it});
