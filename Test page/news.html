@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="news.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -21,7 +22,18 @@
     <p></p>
 
   <div class="parallax">
+    <p><a>
+Neon on Hover
+    </a></p>
+
+    <section class="section">
+  <div class="loader neumorphism">
+    <span></span>
+    <span></span>
+  </div>
+</section>
     <div class="navbar">
+
     <ul>
       <li><a href="Home.html">Home</a></li>
       <li><a href="news.html">News</a></li>
@@ -29,14 +41,59 @@
       <li><a href="about.html">About</a></li>
     </ul>
   </div>
-
+  <div class="clock">
+          <div class="center-nut"></div>
+          <div class="center-nut2"></div>
+          <div class="indicators">
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+          </div>
+          <div class="sec-hand">
+             <div class="sec"></div>
+          </div>
+          <div class="min-hand">
+             <div class="min"></div>
+          </div>
+          <div class="hr-hand">
+             <div class="hr"></div>
+          </div>
+       </div>
+       <div class="logo"><b>d<span>ri</span>bb<span>b</span>le</b></div>
+       <script>
+          const sec = document.querySelector(".sec");
+          const min = document.querySelector(".min");
+          const hr = document.querySelector(".hr");
+          setInterval(function(){
+            let time  = new Date();
+            let secs = time.getSeconds() * 6;
+            let mins = time.getMinutes() * 6;
+            let hrs = time.getHours() * 30;
+            sec.style.transform = `rotateZ(${secs}deg)`;
+            min.style.transform = `rotateZ(${mins}deg)`;
+            hr.style.transform = `rotateZ(${hrs+(mins/12)}deg)`;
+          });
+       </script>
   <script src="cursor.js"></script>
   <script src="home.js"></script>
   <script src="Chat.js"></script>
-
+</div>
       </body>
       <footer >
         <div class="footer">
+          <p><a>
+Neon on Hover
+    </a></p>
+
           <p>This is a test website page.<br> Where I (Megin) test out certain features for other websites before applying them</p>
   </div>
       </footer>

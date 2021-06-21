@@ -1,0 +1,358 @@
+html {
+  scroll-behavior: smooth;
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+:root {
+	--card-height: 40vw;
+	--card-margin: 4vw;
+	--card-top-offset: 1em;
+	--numcards: 4;
+	--outline-width: 0px;
+}
+
+#cards {
+	padding-bottom: calc(var(--numcards) * var(--card-top-offset)); /* Make place at bottom, as items will slide to that position*/
+	margin-bottom: var(--card-margin); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+}
+
+#card_1 {
+	--index: 1;
+}
+
+#card_2 {
+	--index: 2;
+}
+
+#card_3 {
+	--index: 3;
+}
+
+#card_4 {
+	--index: 4;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  border-radius: .5rem;
+background: linear-gradient(145deg, #f0f0f0, #cacaca);
+box-shadow:  5px 5px 10px #5a5a5a,
+             -5px -5px 10px #ffffff;
+  padding: 50px;
+  font-size: 20px;
+}
+.navbar{
+  height: 70px;;
+  align-items: center;
+}
+.type {
+  height: 50vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.card {
+	position: sticky;
+	top: 0;
+	padding-top: calc(var(--index) * var(--card-top-offset));
+}
+
+@supports (animation-timeline: works) {
+
+	@scroll-timeline cards-element-scrolls-in-body {
+		source: selector(body);
+		scroll-offsets:
+			/* Start when the start edge touches the top of the scrollport */
+			selector(#cards) start 1,
+			/* End when the start edge touches the start of the scrollport */
+			selector(#cards) start 0
+		;
+		start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
+		end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
+		time-range: 4s;
+	}
+
+	.card {
+		--index0: calc(var(--index) - 1); /* 0-based index */
+		--reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
+		--reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
+	}
+
+
+
+	.card__content {
+		transform-origin: 50% 0%;
+		will-change: transform;
+
+		--duration: calc(var(--reverse-index0) * 1s);
+		--delay: calc(var(--index0) * 1s);
+
+		animation: var(--duration) linear scale var(--delay) forwards;
+		animation-timeline: cards-element-scrolls-in-body;
+	}
+
+	@keyframes scale {
+		to {
+			transform:
+				scale(calc(
+					1.1
+					-
+					calc(0.1 * var(--reverse-index))
+				));
+		}
+	}
+}
+
+/** DEBUG **/
+
+
+
+/** PAGE STYLING **/
+
+* { /* Poor Man's Reset */
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+  background: #efefef;
+  text-align: center;
+
+  	font-size: calc(1em + 0.5vw);
+}
+
+header,
+main {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+header {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+#cards {
+	list-style: none;
+	outline: calc(var(--outline-width) * 10) solid blue;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--numcards), var(--card-height));
+	gap: var(--card-margin);
+}
+.wrap li{
+  border-radius: 50px;
+  background:#e6e7ee;
+  max-height: 800px;
+  overflow: hidden;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.card {
+	outline: var(--outline-width) solid hotpink;
+}
+.search {
+  position: absolute;
+  top: 155px;
+  left: 20px;
+  right: 20px;
+  input {
+    width: 265px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 15px;
+    transition: width 0.2s;
+    -webkit-appearance: none;
+  }
+  .fix-search & {
+    position: fixed;
+    top: 10px;
+    input {
+      width: 250px;
+    }
+  }
+}
+.card__content {
+
+	display: grid;
+	grid-template-areas: "text img";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+
+	align-items: stretch;
+	outline: var(--outline-width) solid lime;
+}
+
+.card__content > div {
+	grid-area: text;
+	width: 80%;
+	place-self: center;
+	text-align: left;
+height: 100%;
+	display: grid;
+	gap: 1em;
+	place-items: start;
+}
+
+.card__content > figure {
+	grid-area: img;
+	overflow: hidden;
+}
+
+.card__content > figure > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 3.5em;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 2.5em;
+}
+
+p {
+	font-family: sans-serif;
+	font-weight: 300;
+	line-height: 1.42;
+}
+
+
+a {
+  border-radius: .5rem;
+  padding-bottom: 20px;
+   float: left; /* Make sure that the links stay side-by-side */
+   display: block; /* Change the display to block, for responsive reasons (see below) */
+   color: black; /* White text color */
+   text-align: center; /* Center the text */
+   /* Add some padding */
+   text-decoration: none; /* Remove underline */
+   transition: .2s ease-in-out;
+   box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+               -6px -6px 10px rgba(255, 255, 255, .5),
+               6px 6px 8px rgba(255, 255, 255, .075),
+               6px 6px 10px rgba(0, 0, 0, .15);
+ }
+a.right {
+ float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+a:hover {
+ background-color: #ddd; /* Grey background color */
+ color: black; /* Black text color */
+ box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+             -2px -2px 4px rgba(255, 255, 255, .4),
+             2px 2px 2px rgba(255, 255, 255, .05),
+             2px 2px 4px rgba(0, 0, 0, .1);
+}
+a:after{
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+              inset -2px -2px 4px rgba(255, 255, 255, .5),
+              inset 2px 2px 2px rgba(255, 255, 255, .075),
+              inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+button {
+  padding: 1.5em 5em;
+  background: #efefef;
+  border: none;
+  border-radius: .5rem;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+              -6px -6px 10px rgba(255, 255, 255, .5),
+              6px 6px 8px rgba(255, 255, 255, .075),
+              6px 6px 10px rgba(0, 0, 0, .15);
+}
+button:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+              -2px -2px 4px rgba(255, 255, 255, .4),
+              2px 2px 2px rgba(255, 255, 255, .05),
+              2px 2px 4px rgba(0, 0, 0, .1);
+}
+button:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+              inset -2px -2px 4px rgba(255, 255, 255, .5),
+              inset 2px 2px 2px rgba(255, 255, 255, .075),
+              inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+.btn {
+	background: rgb(188 87 36);
+	color: rgb(255 255 255);
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.5em;
+	border-radius: 0.25em;
+}
+
+aside {
+	width: 50vw;
+	margin: 0 auto;
+	text-align: left;
+}
+
+aside p {
+	margin-bottom: 1em;
+}
+.me{
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
