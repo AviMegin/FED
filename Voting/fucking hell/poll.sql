@@ -4,5 +4,5 @@ CREATE TABLE `poll` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `poll` (`id`, `question`) VALUES
-(1, 'Which JS framework you recently used?'),
-(2, 'Another question');
+(1, 'Are you ok?'),
+(2, 'are you sure?');

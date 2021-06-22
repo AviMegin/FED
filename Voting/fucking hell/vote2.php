@@ -1,8 +1,8 @@
 <?php
 include "config.php";
 
-$pollid = 1;
-$userid =  $_SERVER['REMOTE_ADDR'];
+$pollid = 2;
+$userid = 100;
 $request = $_POST['request'];
 
 // Check vote/
@@ -47,7 +47,7 @@ if($request == 1){
 		$totalVotes = $pollresultData_row['allcount'];
 
 		// Color codes
-		$colors_arr = array("#9CCFE7","#977FD7","#F5A9CB","#ffb067");
+		$colors_arr = array("#9CCFE7","#977FD7","#F5A9CB","#FFFFC2");
 
 		// Question
 		$pollData = mysqli_query($con,"SELECT question FROM poll WHERE id=".$pollid);
@@ -97,6 +97,9 @@ if($request == 1){
 		}
 		$html .= '</ul>
 
+		</div>';
+		$html .= '
+		<input type="button" value="Vote" id="next" onclick="vote2.php">
 		</div>';
 	}
 

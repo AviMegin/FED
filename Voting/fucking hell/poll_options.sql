@@ -5,7 +5,7 @@ CREATE TABLE `poll_options` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `poll_options` (`id`, `pollid`, `name`) VALUES
-(1, 1, 'AngularJS'),
-(2, 1, 'Vue.js'),
-(3, 1, 'React.js'),
-(4, 1, 'Ember.js');
+(1, 1, 'Yes'),
+(2, 1, 'No'),
+(3, 1, 'Im not sure'),
+(4, 1, 'Ofcourse not');
